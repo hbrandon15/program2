@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{175AE3EE-5947-474A-8752-6571748FDC15}|Default">
-  <MonoDevelop.Ide.ItemProperties.program2 FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.program2Test PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="program2/Class1.cs">
@@ -23,5 +23,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.testing FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

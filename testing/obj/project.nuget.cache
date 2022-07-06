@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "THGbHPirsnHz72tqMsmIJeX7N2CMmZ1qOOaNQ9URarbRfaWq6nWrYzdsfXJWxOtnwbLbuToe0RK2wDJVhpKuCw==",
+  "dgSpecHash": "ZH0y/TkwlV5lcBuVTGHigJWUHKt5SiELFdVzvavQaro5a/pqhprXrlGJfmpMVX09qBcLZ3P7W1WcccEvSdNsOg==",
   "success": true,
-  "projectFilePath": "/Users/brandonhernandez/Projects/program2/testing/testing.csproj",
+  "projectFilePath": "/Users/brandonhernandez/Projects/program2/testing/program2Test.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
