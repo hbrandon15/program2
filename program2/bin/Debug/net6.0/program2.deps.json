@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "testing/1.0.0": {
-        "dependencies": {
-          "program2": "1.0.0"
-        },
-        "runtime": {
-          "testing.dll": {}
-        }
-      },
       "program2/1.0.0": {
         "runtime": {
           "program2.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "testing/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "program2/1.0.0": {
       "type": "project",
       "serviceable": false,

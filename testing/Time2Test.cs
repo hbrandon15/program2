@@ -44,6 +44,11 @@ namespace program2
             // attempt to initialize t6 with invalid values
             try
             {
+                Console.WriteLine("t1 before: ");
+                Console.WriteLine($" {t1.ToUniversalString()}");
+                t1.addtime(1, 1, 1);
+                Console.WriteLine("t1 after: ");
+                Console.WriteLine($" {t1.ToUniversalString()}");
 
             }
             catch (ArgumentOutOfRangeException ex)
