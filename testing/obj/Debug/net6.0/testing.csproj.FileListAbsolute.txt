@@ -1,0 +1,15 @@
+/Users/brandonhernandez/Projects/program2/testing/bin/Debug/net6.0/testing
+/Users/brandonhernandez/Projects/program2/testing/bin/Debug/net6.0/testing.deps.json
+/Users/brandonhernandez/Projects/program2/testing/bin/Debug/net6.0/testing.runtimeconfig.json
+/Users/brandonhernandez/Projects/program2/testing/bin/Debug/net6.0/testing.dll
+/Users/brandonhernandez/Projects/program2/testing/bin/Debug/net6.0/testing.pdb
+/Users/brandonhernandez/Projects/program2/testing/obj/Debug/net6.0/testing.csproj.AssemblyReference.cache
+/Users/brandonhernandez/Projects/program2/testing/obj/Debug/net6.0/testing.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brandonhernandez/Projects/program2/testing/obj/Debug/net6.0/testing.AssemblyInfoInputs.cache
+/Users/brandonhernandez/Projects/program2/testing/obj/Debug/net6.0/testing.AssemblyInfo.cs
+/Users/brandonhernandez/Projects/program2/testing/obj/Debug/net6.0/testing.csproj.CoreCompileInputs.cache
+/Users/brandonhernandez/Projects/program2/testing/obj/Debug/net6.0/testing.dll
+/Users/brandonhernandez/Projects/program2/testing/obj/Debug/net6.0/refint/testing.dll
+/Users/brandonhernandez/Projects/program2/testing/obj/Debug/net6.0/testing.pdb
+/Users/brandonhernandez/Projects/program2/testing/obj/Debug/net6.0/testing.genruntimeconfig.cache
+/Users/brandonhernandez/Projects/program2/testing/obj/Debug/net6.0/ref/testing.dll

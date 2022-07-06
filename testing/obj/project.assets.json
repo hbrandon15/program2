@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "program2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/program2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/program2.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "program2/1.0.0": {
+      "type": "project",
+      "path": "../program2/program2.csproj",
+      "msbuildProject": "../program2/program2.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "program2 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/brandonhernandez/.nuget/packages/": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/brandonhernandez/Projects/program2/program2/program2.csproj": {
+              "projectPath": "/Users/brandonhernandez/Projects/program2/program2/program2.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
