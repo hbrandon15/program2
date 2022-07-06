@@ -93,12 +93,24 @@ namespace program2
         $"{((Hour == 0 || Hour == 12) ? 12 : Hour % 12)}:" +
         $"{Minute:D2}:{Second:D2} {(Hour < 12 ? "AM" : "PM")}";
 
-
+        // add a value of time recieved as three integers representing numbers of
+        // hours, minutes, and seconds to be added
         public void addtime(int h, int m, int s)
         {
             Hour += h;
             Minute += m;
             Second += s;
         }
+
+        // overloaded addtime method that will add a value of time received as another Time2 object
+        public void addtime(Time2 atime)
+        {
+            var btime = new Time2(3, 4, 0);
+            atime.Hour = atime.Hour + btime.Hour;
+            atime.Minute = atime.Minute + btime.Minute;
+            atime.Second = atime.Second + btime.Second;     
+        }
+
+
     }
 }
