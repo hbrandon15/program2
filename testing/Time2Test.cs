@@ -42,20 +42,21 @@ namespace program2
             Console.WriteLine($" {t5.ToString()}"); // 12:25:42 PM
 
             // trying my addtime method
-            //try
-            //{
-            //    Console.WriteLine("t1 before: ");
-            //    Console.WriteLine($" {t1.ToUniversalString()}");
-            //    t1.addtime(1, 1, 1);
-            //    Console.WriteLine("t1 after: ");
-            //    Console.WriteLine($" {t1.ToUniversalString()}");
+            try
+            {
+                Console.WriteLine("t1 before: ");
+                Console.WriteLine($" {t1.ToUniversalString()}");
+                t1.addtime(1, 1, 1);
+                Console.WriteLine("t1 after: ");
+                Console.WriteLine($" {t1.ToUniversalString()}");
 
-            //}
-            //catch (ArgumentOutOfRangeException ex)
-            //{
-            //    Console.WriteLine("\nException while initializing t6:");
-            //    Console.WriteLine(ex.Message);
-            //}
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine("\nException while initializing t6:");
+                Console.WriteLine(ex.Message);
+            }
+
             // trying my overloaded addtime method
             try
             {
