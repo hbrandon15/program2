@@ -1,13 +1,28 @@
 ﻿<Properties StartupConfiguration="{175AE3EE-5947-474A-8752-6571748FDC15}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/brandonhernandez/Projects/program2/testing/Time2Test.cs" relfile="testing/Time2Test.cs" line="79" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.program2Test PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="program2PartB/Time2char.cs">
+    <Files>
+      <File FileName="testing/Time2Test.cs" Line="80" Column="1" NotebookId="1" />
+      <File FileName="program2PartB/Time2char.cs" Line="43" Column="24" NotebookId="1" />
+      <File FileName="program2/Time2.cs" Line="1" Column="1" NotebookId="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="program2" expanded="True" selected="True">
+          <Node name="program2" expanded="True">
             <Node name="program2" expanded="True">
               <Node name="Dependencies" expanded="True" />
+            </Node>
+            <Node name="program2PartB" expanded="True">
+              <Node name="Time2char.cs" selected="True" />
             </Node>
             <Node name="program2Test" expanded="True">
               <Node name="Dependencies" expanded="True">
@@ -22,9 +37,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>

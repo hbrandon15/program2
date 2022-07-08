@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/program2.dll": {}
         }
+      },
+      "program2PartB/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/program2PartB.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/program2PartB.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../program2/program2.csproj",
       "msbuildProject": "../program2/program2.csproj"
+    },
+    "program2PartB/1.0.0": {
+      "type": "project",
+      "path": "../program2PartB/program2PartB.csproj",
+      "msbuildProject": "../program2PartB/program2PartB.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "program2 >= 1.0.0"
+      "program2 >= 1.0.0",
+      "program2PartB >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -53,6 +69,9 @@
           "projectReferences": {
             "/Users/brandonhernandez/Projects/program2/program2/program2.csproj": {
               "projectPath": "/Users/brandonhernandez/Projects/program2/program2/program2.csproj"
+            },
+            "/Users/brandonhernandez/Projects/program2/program2PartB/program2PartB.csproj": {
+              "projectPath": "/Users/brandonhernandez/Projects/program2/program2PartB/program2PartB.csproj"
             }
           }
         }

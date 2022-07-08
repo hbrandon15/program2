@@ -1,0 +1,12 @@
+/Users/brandonhernandez/Projects/program2/program2PartB/bin/Debug/net6.0/program2PartB.deps.json
+/Users/brandonhernandez/Projects/program2/program2PartB/bin/Debug/net6.0/program2PartB.dll
+/Users/brandonhernandez/Projects/program2/program2PartB/bin/Debug/net6.0/program2PartB.pdb
+/Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/program2PartB.csproj.AssemblyReference.cache
+/Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/program2PartB.GeneratedMSBuildEditorConfig.editorconfig
+/Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/program2PartB.AssemblyInfoInputs.cache
+/Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/program2PartB.AssemblyInfo.cs
+/Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/program2PartB.csproj.CoreCompileInputs.cache
+/Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/program2PartB.dll
+/Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/refint/program2PartB.dll
+/Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/program2PartB.pdb
+/Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/ref/program2PartB.dll

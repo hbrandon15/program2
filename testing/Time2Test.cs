@@ -9,7 +9,7 @@ namespace program2
         {
             var t1 = new Time2();
             var t2 = new Time2(2);
-            var t3 = new Time2(21, 34);
+            var t3 = new Time2char(12,1,1);
             var t4 = new Time2(12, 25, 42);
             var t5 = new Time2(t4);
             var t6 = new Time2(23, 59, 59);
@@ -75,11 +75,11 @@ namespace program2
             //}
 
             Console.WriteLine("\n");
-            Console.WriteLine("t2 before: ");
-            Console.WriteLine($" {t2.ToUniversalString()}");
-            t2.addtime(t2);
-            Console.WriteLine("t2 after: ");
-            Console.WriteLine($" {t2.ToUniversalString()}");
+            Console.WriteLine("t3 before: ");
+            Console.WriteLine($" {t3.ToUniversalString()}");
+            t3.addtime(1,1,1);
+            Console.WriteLine("t3 after: ");
+            Console.WriteLine($" {t3.ToUniversalString()}");
         }
     }
 }
