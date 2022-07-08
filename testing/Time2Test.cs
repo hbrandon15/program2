@@ -75,11 +75,11 @@ namespace program2
             //}
 
             Console.WriteLine("\n");
-            Console.WriteLine("t4 before: ");
-            Console.WriteLine($" {t4.ToUniversalString()}");
-            t4.addtime(0, 60, 0);
-            Console.WriteLine("t4 after: ");
-            Console.WriteLine($" {t4.ToUniversalString()}");
+            Console.WriteLine("t2 before: ");
+            Console.WriteLine($" {t2.ToUniversalString()}");
+            t2.addtime(t2);
+            Console.WriteLine("t2 after: ");
+            Console.WriteLine($" {t2.ToUniversalString()}");
         }
     }
 }

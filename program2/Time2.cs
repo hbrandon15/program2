@@ -107,11 +107,11 @@ namespace program2
             {
                 throw new ArgumentOutOfRangeException("Cannot add any more to this time");
             }
-         
+
             else
             {
                 second_temp = Second + s;
-                if(second_temp > 59)
+                if (second_temp > 59)
                 {
                     int overflow = second_temp - 59;
                     Second = 0;
@@ -123,7 +123,7 @@ namespace program2
                     Second = second_temp;
                 }
                 minute_temp = Minute + m;
-                if(minute_temp > 59)
+                if (minute_temp > 59)
                 {
                     int overflow = minute_temp - 59;
                     Minute = 0;
@@ -135,7 +135,7 @@ namespace program2
                     Minute = minute_temp;
                 }
                 hour_temp = Hour + h;
-                if(hour_temp > 23)
+                if (hour_temp > 23)
                 {
                     throw new ArgumentOutOfRangeException("Cannot add any more to this time");
                 }
@@ -149,12 +149,56 @@ namespace program2
         // overloaded addtime method that will add a value of time received as another Time2 object
         public void addtime(Time2 atime)
         {
-            var btime = new Time2(3, 4, 0);
-            atime.Hour = atime.Hour + btime.Hour;
-            atime.Minute = atime.Minute + btime.Minute;
-            atime.Second = atime.Second + btime.Second;     
+            var btime = atime;
+            int hour_temp, minute_temp, second_temp;
+
+            if (atime.Hour > 23 || atime.Minute > 59 || atime.Second > 59)
+            {
+                throw new ArgumentOutOfRangeException("Hours must be less than 23, Minutes and Seconds must be less than 59");
+            }
+            else if (atime.Hour == 23 && atime.Minute == 59 && atime.Second == 59)
+            {
+                throw new ArgumentOutOfRangeException("Cannot add any more to this time");
+            }
+
+            else
+            {
+                second_temp = btime.Second + atime.Second;
+                if (second_temp > 59)
+                {
+                    int overflow = second_temp - 59;
+                    atime.Second = 0;
+                    atime.Minute++;
+                    atime.Second = overflow - 1;
+                }
+                else
+                {
+                    atime.Second = second_temp;
+                }
+                minute_temp = btime.Minute + atime.Minute;
+                if (minute_temp > 59)
+                {
+                    int overflow = minute_temp - 59;
+                    atime.Minute = 0;
+                    atime.Hour++;
+                    atime.Minute = overflow - 1;
+                }
+                else
+                {
+                    atime.Minute = minute_temp;
+                }
+                hour_temp = btime.Hour + atime.Hour;
+                if (hour_temp > 23)
+                {
+                    throw new ArgumentOutOfRangeException("Cannot add any more to this time");
+                }
+                else
+                {
+                    atime.Hour = hour_temp;
+                }
+            }
+
+
         }
-
-
     }
 }
