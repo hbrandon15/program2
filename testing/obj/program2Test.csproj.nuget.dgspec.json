@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/brandonhernandez/Projects/program2/testing/program2Test.csproj": {}
+    "C:\\Users\\h_bra\\program2\\testing\\program2Test.csproj": {}
   },
   "projects": {
-    "/Users/brandonhernandez/Projects/program2/program2/program2.csproj": {
+    "C:\\Users\\h_bra\\program2\\program2\\program2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brandonhernandez/Projects/program2/program2/program2.csproj",
+        "projectUniqueName": "C:\\Users\\h_bra\\program2\\program2\\program2.csproj",
         "projectName": "program2",
-        "projectPath": "/Users/brandonhernandez/Projects/program2/program2/program2.csproj",
-        "packagesPath": "/Users/brandonhernandez/.nuget/packages/",
-        "outputPath": "/Users/brandonhernandez/Projects/program2/program2/obj/",
+        "projectPath": "C:\\Users\\h_bra\\program2\\program2\\program2.csproj",
+        "packagesPath": "C:\\Users\\h_bra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h_bra\\program2\\program2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/brandonhernandez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\h_bra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,34 +54,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/brandonhernandez/Projects/program2/testing/program2Test.csproj": {
+    "C:\\Users\\h_bra\\program2\\testing\\program2Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brandonhernandez/Projects/program2/testing/program2Test.csproj",
+        "projectUniqueName": "C:\\Users\\h_bra\\program2\\testing\\program2Test.csproj",
         "projectName": "program2Test",
-        "projectPath": "/Users/brandonhernandez/Projects/program2/testing/program2Test.csproj",
-        "packagesPath": "/Users/brandonhernandez/.nuget/packages/",
-        "outputPath": "/Users/brandonhernandez/Projects/program2/testing/obj/",
+        "projectPath": "C:\\Users\\h_bra\\program2\\testing\\program2Test.csproj",
+        "packagesPath": "C:\\Users\\h_bra\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\h_bra\\program2\\testing\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/brandonhernandez/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\h_bra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/brandonhernandez/Projects/program2/program2/program2.csproj": {
-                "projectPath": "/Users/brandonhernandez/Projects/program2/program2/program2.csproj"
+              "C:\\Users\\h_bra\\program2\\program2\\program2.csproj": {
+                "projectPath": "C:\\Users\\h_bra\\program2\\program2\\program2.csproj"
               }
             }
           }
@@ -108,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

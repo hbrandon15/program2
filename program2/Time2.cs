@@ -97,9 +97,53 @@ namespace program2
         // hours, minutes, and seconds to be added
         public void addtime(int h, int m, int s)
         {
-            Hour += h;
-            Minute += m;
-            Second += s;
+            int hour_temp, minute_temp, second_temp;
+
+            if (h > 23 || m > 59 || s > 59)
+            {
+                throw new ArgumentOutOfRangeException("Hours must be less than 23, Minutes and Seconds must be less than 59");
+            }
+            else if (Hour == 23 && Minute == 59 && Second == 59)
+            {
+                throw new ArgumentOutOfRangeException("Cannot add any more to this time");
+            }
+         
+            else
+            {
+                second_temp = Second + s;
+                if(second_temp > 59)
+                {
+                    int overflow = second_temp - 59;
+                    Second = 0;
+                    Minute++;
+                    Second = overflow - 1;
+                }
+                else
+                {
+                    Second = second_temp;
+                }
+                minute_temp = Minute + m;
+                if(minute_temp > 59)
+                {
+                    int overflow = minute_temp - 59;
+                    Minute = 0;
+                    Hour++;
+                    Minute = overflow - 1;
+                }
+                else
+                {
+                    Minute = minute_temp;
+                }
+                hour_temp = Hour + h;
+                if(hour_temp > 23)
+                {
+                    throw new ArgumentOutOfRangeException("Cannot add any more to this time");
+                }
+                else
+                {
+                    Hour = hour_temp;
+                }
+            }
         }
 
         // overloaded addtime method that will add a value of time received as another Time2 object

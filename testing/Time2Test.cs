@@ -12,6 +12,7 @@ namespace program2
             var t3 = new Time2(21, 34);
             var t4 = new Time2(12, 25, 42);
             var t5 = new Time2(t4);
+            var t6 = new Time2(23, 59, 59);
 
 
 
@@ -42,36 +43,43 @@ namespace program2
             Console.WriteLine($" {t5.ToString()}"); // 12:25:42 PM
 
             // trying my addtime method
-            try
-            {
-                Console.WriteLine("t1 before: ");
-                Console.WriteLine($" {t1.ToUniversalString()}");
-                t1.addtime(1, 1, 1);
-                Console.WriteLine("t1 after: ");
-                Console.WriteLine($" {t1.ToUniversalString()}");
+            //try
+            //{
+            //    Console.WriteLine("t1 before: ");
+            //    Console.WriteLine($" {t1.ToUniversalString()}");
+            //    t1.addtime(1, 1, 1);
+            //    Console.WriteLine("t1 after: ");
+            //    Console.WriteLine($" {t1.ToUniversalString()}");
 
-            }
-            catch (ArgumentOutOfRangeException ex)
-            {
-                Console.WriteLine("\nException while initializing t6:");
-                Console.WriteLine(ex.Message);
-            }
+            //}
+            //catch (ArgumentOutOfRangeException ex)
+            //{
+            //    Console.WriteLine("\nException while initializing t6:");
+            //    Console.WriteLine(ex.Message);
+            //}
 
-            // trying my overloaded addtime method
-            try
-            {
-                Console.WriteLine("t1 before: ");
-                Console.WriteLine($" {t1.ToUniversalString()}");
-                t1.addtime(t1);
-                Console.WriteLine("t1 after: ");
-                Console.WriteLine($" {t1.ToUniversalString()}");
+            //// trying my overloaded addtime method
+            //try
+            //{
+            //    Console.WriteLine("t1 before: ");
+            //    Console.WriteLine($" {t1.ToUniversalString()}");
+            //    t1.addtime(t1);
+            //    Console.WriteLine("t1 after: ");
+            //    Console.WriteLine($" {t1.ToUniversalString()}");
 
-            }
-            catch (ArgumentOutOfRangeException ex)
-            {
-                Console.WriteLine("\nException while initializing t6:");
-                Console.WriteLine(ex.Message);
-            }
+            //}
+            //catch (ArgumentOutOfRangeException ex)
+            //{
+            //    Console.WriteLine("\nException while initializing t6:");
+            //    Console.WriteLine(ex.Message);
+            //}
+
+            Console.WriteLine("\n");
+            Console.WriteLine("t4 before: ");
+            Console.WriteLine($" {t4.ToUniversalString()}");
+            t4.addtime(0, 60, 0);
+            Console.WriteLine("t4 after: ");
+            Console.WriteLine($" {t4.ToUniversalString()}");
         }
     }
 }
