@@ -10,3 +10,15 @@
 /Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/refint/program2PartB.dll
 /Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/program2PartB.pdb
 /Users/brandonhernandez/Projects/program2/program2PartB/obj/Debug/net6.0/ref/program2PartB.dll
+C:\Users\h_bra\program2\program2PartB\bin\Debug\net6.0\program2PartB.deps.json
+C:\Users\h_bra\program2\program2PartB\bin\Debug\net6.0\program2PartB.dll
+C:\Users\h_bra\program2\program2PartB\bin\Debug\net6.0\program2PartB.pdb
+C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\program2PartB.csproj.AssemblyReference.cache
+C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\program2PartB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\program2PartB.AssemblyInfoInputs.cache
+C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\program2PartB.AssemblyInfo.cs
+C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\program2PartB.csproj.CoreCompileInputs.cache
+C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\program2PartB.dll
+C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\refint\program2PartB.dll
+C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\program2PartB.pdb
+C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\ref\program2PartB.dll

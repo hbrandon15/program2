@@ -8,6 +8,7 @@ namespace program2
         private int hour; // 0 - 23
         private int minute; // 0 - 59
         private int second; // 0 - 59
+        private int tempVar = 48; // ASCII value of 0
                             // constructor can be called with zero, one, two or three arguments
         public Time2char(int hour = 0, int minute = 0, int second = 0)
         {
@@ -37,33 +38,41 @@ namespace program2
             }
             set
             {
-                char[] charHours = new char[2];
+                // new variable declarations
+                char[] charHour = new char[2];
+                int digit1, digit2, combinedInt;
+                char char1, char2;
+
                 if (value < 0 || value > 23)
                 {
                     throw new ArgumentOutOfRangeException(nameof(value),
                     value, $"{nameof(Hour)} must be 0-23");
                 }
-                else if (value > 9)
-                {
-                    int digit1 = value / 10;
-                    int digit2 = value % 10;
-                    char char1 = Convert.ToChar(digit1);
-                    char char2 = Convert.ToChar(digit2);
-                    charHours[0] = char1;
-                    charHours[1] = char2;
 
-                    hour = (charHours[0] - '0') * 10 + (charHours[1] - '0');
 
-                }
-                else
-                {
+                digit1 = value / 10; // first digit of hour
+                digit2 = value % 10; // second digit of hour
 
-                    int digit = value % 10;
-                    char char1 = Convert.ToChar(digit);
-                    charHours[0] = char1;
+                 
 
-                    hour = charHours[0] - '0';
-                }
+                // converting to Chars
+                char1 = Convert.ToChar(tempVar + digit1);
+                char2 = Convert.ToChar(tempVar + digit2);
+
+                charHour[0] = char1;
+                charHour[1] = char2;
+
+                // converting to Ints
+                digit1 = charHour[0] - '0';
+                digit2 = charHour[1] - '0';
+
+                // combine both digits to get full hour
+                combinedInt = int.Parse(digit1.ToString() + digit2.ToString());
+
+                hour = combinedInt;
+
+              
+               
             }
         }
 
@@ -76,12 +85,36 @@ namespace program2
             }
             set
             {
+                // new variable declarations
+                char[] charMinute = new char[2];
+                int digit1, digit2, combinedInt;
+                char char1, char2;
                 if (value < 0 || value > 59)
                 {
                     throw new ArgumentOutOfRangeException(nameof(value),
                     value, $"{nameof(Minute)} must be 0-59");
                 }
-                minute = value;
+
+                digit1 = value / 10; // first digit of minute
+                digit2 = value % 10; // second digit of minute
+
+                
+
+                // converting to Chars
+                char1 = Convert.ToChar(tempVar + digit1);
+                char2 = Convert.ToChar(tempVar + digit2);
+
+                charMinute[0] = char1;
+                charMinute[1] = char2;
+
+                // converting to Ints
+                digit1 = charMinute[0] - '0';
+                digit2 = charMinute[1] - '0';
+
+                // combine both digits to get full minute
+                combinedInt = int.Parse(digit1.ToString() + digit2.ToString());
+
+                minute = combinedInt;
             }
         }
 
@@ -94,13 +127,37 @@ namespace program2
             }
             set
             {
+                // new variable declarations
+                char[] charSecond = new char[2];
+                int digit1, digit2, combinedInt;
+                char char1, char2;
+
                 if (value < 0 || value > 59)
                 {
                     throw new ArgumentOutOfRangeException(nameof(value),
                     value, $"{nameof(Second)} must be 0-59");
                 }
 
-                second = value;
+                digit1 = value / 10; // first digit of minute
+                digit2 = value % 10; // second digit of minute
+
+
+
+                // converting to Chars
+                char1 = Convert.ToChar(tempVar + digit1);
+                char2 = Convert.ToChar(tempVar + digit2);
+
+                charSecond[0] = char1;
+                charSecond[1] = char2;
+
+                // converting to Ints
+                digit1 = charSecond[0] - '0';
+                digit2 = charSecond[1] - '0';
+
+                // combine both digits to get full Second
+                combinedInt = int.Parse(digit1.ToString() + digit2.ToString());
+
+                second = combinedInt;
             }
         }
 

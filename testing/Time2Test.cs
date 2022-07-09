@@ -9,9 +9,9 @@ namespace program2
         {
             var t1 = new Time2();
             var t2 = new Time2(2);
-            var t3 = new Time2char(12,1,1);
-            var t4 = new Time2(12, 25, 42);
-            var t5 = new Time2(t4);
+            var t3 = new Time2char(6,1,1);
+            var t4 = new Time2char(10, 25, 42);
+            var t5 = new Time2(t2);
             var t6 = new Time2(23, 59, 59);
 
 
@@ -42,21 +42,21 @@ namespace program2
             Console.WriteLine($" {t5.ToUniversalString()}"); // 12:25:42
             Console.WriteLine($" {t5.ToString()}"); // 12:25:42 PM
 
-            // trying my addtime method
-            //try
-            //{
-            //    Console.WriteLine("t1 before: ");
-            //    Console.WriteLine($" {t1.ToUniversalString()}");
-            //    t1.addtime(1, 1, 1);
-            //    Console.WriteLine("t1 after: ");
-            //    Console.WriteLine($" {t1.ToUniversalString()}");
+            //trying my addtime method
+            try
+            {
+                Console.WriteLine("t1 before: ");
+                Console.WriteLine($" {t1.ToUniversalString()}");
+                t1.addtime(1, 1, 1);
+                Console.WriteLine("t1 after: ");
+                Console.WriteLine($" {t1.ToUniversalString()}");
 
-            //}
-            //catch (ArgumentOutOfRangeException ex)
-            //{
-            //    Console.WriteLine("\nException while initializing t6:");
-            //    Console.WriteLine(ex.Message);
-            //}
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                Console.WriteLine("\nException while initializing t6:");
+                Console.WriteLine(ex.Message);
+            }
 
             //// trying my overloaded addtime method
             //try
@@ -76,10 +76,17 @@ namespace program2
 
             Console.WriteLine("\n");
             Console.WriteLine("t3 before: ");
-            Console.WriteLine($" {t3.ToUniversalString()}");
-            t3.addtime(1,1,1);
+            Console.WriteLine($" {t3.ToUniversalString()}"); // 06:01:01
+            t3.addtime(6,7,55);
             Console.WriteLine("t3 after: ");
-            Console.WriteLine($" {t3.ToUniversalString()}");
+            Console.WriteLine($" {t3.ToUniversalString()}"); // 12:08:56
+
+            Console.WriteLine("\n");
+            Console.WriteLine("t4 before: ");
+            Console.WriteLine($" {t4.ToUniversalString()}"); //10:25:42
+            t4.addtime(t4);
+            Console.WriteLine("t4 after: ");
+            Console.WriteLine($" {t4.ToUniversalString()}"); //20:52:24
         }
     }
 }
