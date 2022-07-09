@@ -87,31 +87,31 @@ namespace program2
 
             Console.WriteLine("\n");
             Console.WriteLine("t4 before: ");
-            Console.WriteLine($" {t4.ToUniversalString()}"); //10:25:42
+            Console.WriteLine($" {t4.ToUniversalString()}"); // 10:25:42
             t4.addtime(t4);
             Console.WriteLine("t4 after: ");
-            Console.WriteLine($" {t4.ToUniversalString()}"); //20:52:24
+            Console.WriteLine($" {t4.ToUniversalString()}"); // 20:52:24
 
             Console.WriteLine("\n");
             Console.WriteLine("t7 STOPWATCH before: ");
-            Console.WriteLine($" {t7.ToUniversalString()}");
+            Console.WriteLine($" {t7.ToUniversalString()}"); // 01:01:01:10
             t7.addtime(1,1,1);
             Console.WriteLine("t7 after: ");
-            Console.WriteLine($" {t7.ToUniversalString()}");
+            Console.WriteLine($" {t7.ToUniversalString()}"); // 02:02:02:10
 
             Console.WriteLine("\n");
             Console.WriteLine("t8 STOPWATCH before: ");
-            Console.WriteLine($" {t8.ToUniversalString()}");
+            Console.WriteLine($" {t8.ToUniversalString()}"); // 02:00:00:10
             t8.addtime(1, 1, 1);
             Console.WriteLine("t8 after: ");
-            Console.WriteLine($" {t8.ToUniversalString()}");
+            Console.WriteLine($" {t8.ToUniversalString()}"); // 03:01:01:10
 
             Console.WriteLine("\n");
             Console.WriteLine("t9 STOPWATCH before: ");
-            Console.WriteLine($" {t9.ToUniversalString()}");
+            Console.WriteLine($" {t9.ToUniversalString()}"); // 01:01:01:30
             t9.addtime(t9);
             Console.WriteLine("t9 after: ");
-            Console.WriteLine($" {t9.ToUniversalString()}");
+            Console.WriteLine($" {t9.ToUniversalString()}"); // 02:02:02:30
         }
     }
 }
