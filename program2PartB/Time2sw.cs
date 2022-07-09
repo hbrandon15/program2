@@ -36,8 +36,17 @@ namespace program2
                 {
                     throw new ArgumentOutOfRangeException(nameof(value), value, $"{nameof(Milisecond)} must be 0-999");
                 }
+                milisecond = value;
             }
         }
+        // convert to string in universal-time format (HH:MM:SS:MS)
+        public override string ToUniversalString() =>
+        $"{Hour:D2}:{Minute:D2}:{Second:D2}:{Milisecond:D2}";
+
+        // convert to string in standard-time format (H:MM:SS AM or PM)
+        public override string ToString() =>
+        $"{((Hour == 0 || Hour == 12) ? 12 : Hour % 12)}:" +
+        $"{Minute:D2}:{Second:D2}:{Milisecond:D2} {(Hour < 12 ? "AM" : "PM")}";
 
     }
 }

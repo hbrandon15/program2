@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "program2PartB/1.0.0": {
+        "dependencies": {
+          "program2": "1.0.0"
+        },
         "runtime": {
           "program2PartB.dll": {}
+        }
+      },
+      "program2/1.0.0": {
+        "runtime": {
+          "program2.dll": {}
         }
       }
     }
   },
   "libraries": {
     "program2PartB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "program2/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

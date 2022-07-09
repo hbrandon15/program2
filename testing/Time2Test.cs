@@ -14,6 +14,10 @@ namespace program2
             var t5 = new Time2(t2);
             var t6 = new Time2(23, 59, 59);
 
+            var t7 = new Time2sw(1, 1, 1, 10);
+            var t8 = new Time2sw(t2, 10);
+            var t9 = new Time2sw(t7, 30);
+
 
 
 
@@ -87,6 +91,27 @@ namespace program2
             t4.addtime(t4);
             Console.WriteLine("t4 after: ");
             Console.WriteLine($" {t4.ToUniversalString()}"); //20:52:24
+
+            Console.WriteLine("\n");
+            Console.WriteLine("t7 STOPWATCH before: ");
+            Console.WriteLine($" {t7.ToUniversalString()}");
+            t7.addtime(1,1,1);
+            Console.WriteLine("t7 after: ");
+            Console.WriteLine($" {t7.ToUniversalString()}");
+
+            Console.WriteLine("\n");
+            Console.WriteLine("t8 STOPWATCH before: ");
+            Console.WriteLine($" {t8.ToUniversalString()}");
+            t8.addtime(1, 1, 1);
+            Console.WriteLine("t8 after: ");
+            Console.WriteLine($" {t8.ToUniversalString()}");
+
+            Console.WriteLine("\n");
+            Console.WriteLine("t9 STOPWATCH before: ");
+            Console.WriteLine($" {t9.ToUniversalString()}");
+            t9.addtime(t9);
+            Console.WriteLine("t9 after: ");
+            Console.WriteLine($" {t9.ToUniversalString()}");
         }
     }
 }

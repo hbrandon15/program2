@@ -22,3 +22,6 @@ C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\program2PartB.dll
 C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\refint\program2PartB.dll
 C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\program2PartB.pdb
 C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\ref\program2PartB.dll
+C:\Users\h_bra\program2\program2PartB\bin\Debug\net6.0\program2.dll
+C:\Users\h_bra\program2\program2PartB\bin\Debug\net6.0\program2.pdb
+C:\Users\h_bra\program2\program2PartB\obj\Debug\net6.0\program2PartB.csproj.CopyComplete

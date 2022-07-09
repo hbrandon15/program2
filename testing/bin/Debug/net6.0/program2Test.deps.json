@@ -21,6 +21,9 @@
         }
       },
       "program2PartB/1.0.0": {
+        "dependencies": {
+          "program2": "1.0.0"
+        },
         "runtime": {
           "program2PartB.dll": {}
         }

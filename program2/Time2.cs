@@ -85,7 +85,7 @@ namespace program2
         }
 
         // convert to string in universal-time format (HH:MM:SS)
-        public string ToUniversalString() =>
+        public virtual string ToUniversalString() =>
         $"{Hour:D2}:{Minute:D2}:{Second:D2}";
 
         // convert to string in standard-time format (H:MM:SS AM or PM)
