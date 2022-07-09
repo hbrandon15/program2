@@ -27,7 +27,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\h_bra\\program2\\program2\\program2.csproj": {
+                "projectPath": "C:\\Users\\h_bra\\program2\\program2\\program2.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

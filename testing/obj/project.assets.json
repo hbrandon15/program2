@@ -15,6 +15,9 @@
       "program2PartB/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "program2": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/program2PartB.dll": {}
         },
