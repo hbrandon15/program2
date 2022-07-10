@@ -7,4 +7,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\program2PartB\program2PartB.csproj" />
+    <ProjectReference Include="..\program2\program2.csproj" />
+  </ItemGroup>
+
 </Project>
