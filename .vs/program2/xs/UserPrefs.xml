@@ -2,14 +2,15 @@
   <MonoDevelop.Ide.ItemProperties.program2Test2 PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <Breakpoint file="/Users/brandonhernandez/Projects/program2/testing/Time2Test.cs" relfile="testing/Time2Test.cs" line="79" column="1" />
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="program2PartB/Time2char.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="program2Test2/Time2TestLINQ.cs">
     <Files>
-      <File FileName="testing/Time2Test.cs" Line="80" Column="1" NotebookId="1" />
-      <File FileName="program2PartB/Time2char.cs" Line="43" Column="24" NotebookId="1" />
-      <File FileName="program2/Time2.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="testing/Time2Test.cs" Line="94" Column="40" />
+      <File FileName="program2/Time2.cs" Line="12" Column="20" />
+      <File FileName="program2Test2/Time2TestLINQ.cs" Line="180" Column="42" />
+      <File FileName="program2PartB/Time2sw.cs" Line="17" Column="141" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,14 +19,9 @@
             <Node name="program2" expanded="True">
               <Node name="Dependencies" expanded="True" />
             </Node>
-            <Node name="program2PartB" expanded="True">
-              <Node name="Time2char.cs" selected="True" />
-            </Node>
-            <Node name="program2Test" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="ProjectDependencies" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="program2PartB" expanded="True" />
+            <Node name="program2Test" expanded="True" />
+            <Node name="program2Test2" expanded="True" />
           </Node>
         </State>
       </Pad>

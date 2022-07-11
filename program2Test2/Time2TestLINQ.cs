@@ -147,6 +147,7 @@ namespace program2
                 from t in TimeList
                 let value1 = typeof(Time2)
                 where t.GetType() == value1
+                orderby t.Hour ascending
                 select t;
             Console.WriteLine("-------------------\n-------------------\nGENERATING REPORT\n-------------------\n-------------------\n");
             foreach (var element in filtered)
@@ -160,6 +161,7 @@ namespace program2
                 from t in TimeList
                 let value1 = typeof(Time2sw)
                 where t.GetType() == value1
+                orderby t.Hour ascending
                 select t;
             Console.WriteLine("-------------------\n-------------------\nGENERATING REPORT\n-------------------\n-------------------\n");
             foreach (var element in filtered)
@@ -172,6 +174,7 @@ namespace program2
             var filtered =
                 from t in TimeList
                 where t.Hour < 12
+                orderby t.Hour ascending
                 select t;
             Console.WriteLine("-------------------\n-------------------\nGENERATING REPORT\n-------------------\n-------------------\n");
             foreach (var element in filtered)
