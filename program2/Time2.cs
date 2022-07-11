@@ -3,12 +3,26 @@ using System; // for class ArgumentOutOfRangeException
 namespace program2
 {
 
-    public class Time2
+    public class Time2 : IComparable<Time2>
     {
         private int hour; // 0 - 23
         private int minute; // 0 - 59
         private int second; // 0 - 59
-                            // constructor can be called with zero, one, two or three arguments
+
+        public virtual int CompareTo(Time2 obj)
+        {
+            if (obj == null) return 1;
+
+            if(this.Hour == obj.Hour && this.Minute == obj.Minute && this.Second == obj.Second)
+            {
+                return 0;
+            }
+            return -1;
+            
+
+            
+        }
+        // constructor can be called with zero, one, two or three arguments
         public Time2(int hour = 0, int minute = 0, int second = 0)
         {
             SetTime(hour, minute, second); // invoke SetTime to validate time

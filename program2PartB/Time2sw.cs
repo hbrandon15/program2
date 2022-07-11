@@ -10,6 +10,20 @@ namespace program2
     {
         private int milisecond; // 0 - 999
 
+        //public override int CompareTo(Time2 atime)
+        //{
+        //    if (atime == null) return 1;
+
+        //    if (this.Hour == atime.Hour && this.Minute == atime.Minute && this.Second == atime.Second)
+        //    {
+        //        return 0;
+        //    }
+        //    return -1;
+
+
+
+        //}
+
         public Time2sw(int hour, int minute, int second, int milisecond)
             : base(hour, minute, second)
         {
