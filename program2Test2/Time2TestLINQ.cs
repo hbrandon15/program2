@@ -57,47 +57,76 @@ namespace program2
                         break;
                     case 3:
                         Console.WriteLine("You have selected to stop entering data");
-                        Console.WriteLine("What report do you want?");
-                        Console.WriteLine("1 - All objects");
-                        Console.WriteLine("2 - All Time2 Objects");
-                        Console.WriteLine("3 - All Time2sw Objects");
-                        Console.WriteLine("4 - All Objects with an AM Time (Time earlier than 11:59:59)");
-                        Console.WriteLine("5 - QUIT");
-                        int reportResponse = Convert.ToInt32(Console.ReadLine());
-                        switch (reportResponse)
-                        {
-                            case 1:
-                                Console.WriteLine("You have selected 'All objects report'");
-                                generateAllObjectsReport(TimeList);
-                                break;
-                            case 2:
-                                Console.WriteLine("You have selected 'All Time2 Objects report'");
-                                generateAllTime2ObjectsReport(TimeList);
-                                break;
-                            case 3:
-                                Console.WriteLine("You have selected 'All Time2sw Objects report'");
-                                generateAllTime2swObjectsReport(TimeList);
-                                break;
-                            case 4:
-                                Console.WriteLine("You have selected 'All Objects with an AM Time (Time earlier than 11:59:59) report'");
-                                generateAllObjectsAmReport(TimeList);
-                                break;
-                            case 5:
-                                Console.WriteLine("You have selected 'QUIT'\n Goodbye!");
-                                break; 
-                        }
+                        selectReport(TimeList);
                         flag = 1;
                         break;
                 }
-               
-
-
-
+           
             } while (flag == 0);
 
+            int finalFlag = 0;
+
+            do
+            {
+                Console.WriteLine("\nWould you like to run another report or QUIT the application?");
+                Console.WriteLine("1 - Another Report");
+                Console.WriteLine("2 - QUIT");
+                int finalResponse = Convert.ToInt32(Console.ReadLine());
+                switch(finalResponse)
+                {
+                    case 1:
+                        selectReport(TimeList);
+                        break;
+                    case 2:
+                        Console.WriteLine("You have selected to QUIT the application\n Goodbye!");
+                        finalFlag = 1;
+                        break;
+                    default:
+                        Console.WriteLine("Please select either 1 or 2");
+                        break;
+                }
+
+            } while (finalFlag == 0);
+           
+           
 
 
 
+
+        }
+
+        private static void selectReport(List<Time2> TimeList)
+        {
+            Console.WriteLine("\nWhat report would you like to generate?");
+            Console.WriteLine("1 - All objects");
+            Console.WriteLine("2 - All Time2 Objects");
+            Console.WriteLine("3 - All Time2sw Objects");
+            Console.WriteLine("4 - All Objects with an AM Time (Time earlier than 11:59:59)");
+            Console.WriteLine("5 - QUIT");
+            int reportResponse = Convert.ToInt32(Console.ReadLine());
+            switch (reportResponse)
+            {
+                case 1:
+                    Console.WriteLine("You have selected 'All objects report'");
+                    generateAllObjectsReport(TimeList);
+                    break;
+                case 2:
+                    Console.WriteLine("You have selected 'All Time2 Objects report'");
+                    generateAllTime2ObjectsReport(TimeList);
+                    break;
+                case 3:
+                    Console.WriteLine("You have selected 'All Time2sw Objects report'");
+                    generateAllTime2swObjectsReport(TimeList);
+                    break;
+                case 4:
+                    Console.WriteLine("You have selected 'All Objects with an AM Time (Time earlier than 11:59:59) report'");
+                    generateAllObjectsAmReport(TimeList);
+                    break;
+                case 5:
+                    Console.WriteLine("You have selected 'QUIT'\n!");
+
+                    break;
+            }
         }
 
         private static void generateAllObjectsReport(List<Time2> TimeList)
