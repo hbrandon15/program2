@@ -1,5 +1,7 @@
 ﻿
 using System;
+using System.Linq;
+
 namespace program2
 {
 
@@ -62,17 +64,26 @@ namespace program2
                         Console.WriteLine("4 - All Objects with an AM Time (Time earlier than 11:59:59)");
                         Console.WriteLine("5 - QUIT");
                         int reportResponse = Convert.ToInt32(Console.ReadLine());
-                        switch(reportResponse)
+                        switch (reportResponse)
                         {
                             case 1:
+                                Console.WriteLine("You have selected 'All objects report'");
+                                generateAllObjectsReport(TimeList);
                                 break;
                             case 2:
+                                Console.WriteLine("You have selected 'All Time2 Objects report'");
+                                generateAllTime2ObjectsReport(TimeList);
                                 break;
                             case 3:
+                                Console.WriteLine("You have selected 'All Time2sw Objects report'");
+                                generateAllTime2swObjectsReport(TimeList);
                                 break;
                             case 4:
+                                Console.WriteLine("You have selected 'All Objects with an AM Time (Time earlier than 11:59:59) report'");
+                                generateAllObjectsAmReport(TimeList);
                                 break;
                             case 5:
+                                Console.WriteLine("You have selected 'QUIT'\n Goodbye!");
                                 break; 
                         }
                         flag = 1;
@@ -85,14 +96,58 @@ namespace program2
             } while (flag == 0);
 
 
-            for (int i = 0; i < TimeList.Count; i++)
+
+
+        }
+
+        private static void generateAllObjectsReport(List<Time2> TimeList)
+        {
+            var filtered =
+                from t in TimeList
+                select t;
+            Console.WriteLine("-------------------\n-------------------\nGENERATING REPORT\n-------------------\n-------------------\n");
+            foreach (var element in filtered)
             {
-                Console.WriteLine(TimeList[i]);
+                Console.WriteLine(element);
             }
-
-
-
-
+        }
+        private static void generateAllTime2ObjectsReport(List<Time2> TimeList)
+        {
+            var filtered =
+                from t in TimeList
+                let value1 = typeof(Time2)
+                where t.GetType() == value1
+                select t;
+            Console.WriteLine("-------------------\n-------------------\nGENERATING REPORT\n-------------------\n-------------------\n");
+            foreach (var element in filtered)
+            {
+                Console.WriteLine(element);
+            }
+        }
+        private static void generateAllTime2swObjectsReport(List<Time2> TimeList)
+        {
+            var filtered =
+                from t in TimeList
+                let value1 = typeof(Time2sw)
+                where t.GetType() == value1
+                select t;
+            Console.WriteLine("-------------------\n-------------------\nGENERATING REPORT\n-------------------\n-------------------\n");
+            foreach (var element in filtered)
+            {
+                Console.WriteLine(element);
+            }
+        }
+        private static void generateAllObjectsAmReport(List<Time2> TimeList)
+        {
+            var filtered =
+                from t in TimeList
+                where t.Hour < 12
+                select t;
+            Console.WriteLine("-------------------\n-------------------\nGENERATING REPORT\n-------------------\n-------------------\n");
+            foreach (var element in filtered)
+            {
+                Console.WriteLine(element);
+            }
         }
     }
 }
