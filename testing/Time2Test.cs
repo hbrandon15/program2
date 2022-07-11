@@ -78,18 +78,20 @@ namespace program2
             //    Console.WriteLine(ex.Message);
             //}
 
+
+            // Testing Character data representation class
             Console.WriteLine("\n");
-            Console.WriteLine("t3 before: ");
+            Console.WriteLine("t3 CHAR before: ");
             Console.WriteLine($" {t3.ToUniversalString()}"); // 06:01:01
             t3.addtime(6,7,55);
-            Console.WriteLine("t3 after: ");
+            Console.WriteLine("t3 CHAR after: ");
             Console.WriteLine($" {t3.ToUniversalString()}"); // 12:08:56
 
             Console.WriteLine("\n");
-            Console.WriteLine("t4 before: ");
+            Console.WriteLine("t4 CHAR before: ");
             Console.WriteLine($" {t4.ToUniversalString()}"); // 10:25:42
             t4.addtime(t4);
-            Console.WriteLine("t4 after: ");
+            Console.WriteLine("t4 CHAR after: ");
             Console.WriteLine($" {t4.ToUniversalString()}"); // 20:52:24
 
             Console.WriteLine("\n");
