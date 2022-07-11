@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace program2
 {
-    public class Time2sw : Time2
+    public class Time2sw : Time2, IComparable<Time2sw>
     {
         private int milisecond; // 0 - 999
 
-        //public override int CompareTo(Time2 atime)
-        //{
-        //    if (atime == null) return 1;
+        public int CompareTo(Time2sw atime)
+        {
+            if (atime == null) return 1;
 
-        //    if (this.Hour == atime.Hour && this.Minute == atime.Minute && this.Second == atime.Second)
-        //    {
-        //        return 0;
-        //    }
-        //    return -1;
+            if (this.Hour == atime.Hour && this.Minute == atime.Minute && this.Second == atime.Second && this.Milisecond == atime.Milisecond)
+            {
+                return 0;
+            }
+            return -1;
 
 
 
-        //}
+        }
 
         public Time2sw(int hour, int minute, int second, int milisecond)
             : base(hour, minute, second)

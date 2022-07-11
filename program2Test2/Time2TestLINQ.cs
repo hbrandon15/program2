@@ -133,6 +133,7 @@ namespace program2
         {
             var filtered =
                 from t in TimeList
+                orderby t.Hour ascending
                 select t;
             Console.WriteLine("-------------------\n-------------------\nGENERATING REPORT\n-------------------\n-------------------\n");
             foreach (var element in filtered)
